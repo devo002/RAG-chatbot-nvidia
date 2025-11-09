@@ -4,6 +4,7 @@
 A Retrieval-Augmented Generation (RAG) chatbot that integrates FastAPI, Gradio, and NVIDIA NIM for intelligent document-based Q&A.
 The system allows users to upload PDFs or HTML files, generates embeddings using MiniLM, stores them in a ChromaDB vector database, and performs LLM inference with conversational memory persisted via SQLite.
 
+
 [![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)](https://www.python.org/)
 [![LLM](https://img.shields.io/badge/LLM-HuggingFace_Transformers-green?logo=huggingface)](https://huggingface.co/models)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.103.2-teal?logo=fastapi)](https://fastapi.tiangolo.com/)
@@ -12,7 +13,7 @@ The system allows users to upload PDFs or HTML files, generates embeddings using
 [![NVIDIA NIM](https://img.shields.io/badge/NVIDIA%20NIM-LLM-green?logo=nvidia)](https://build.nvidia.com/)
 [![Gradio](https://img.shields.io/badge/Gradio-5.x-blue?logo=gradio)](https://www.gradio.app/)
 
-
+![Architecture](docs/img/chat3.png)
 
 ## Getting Started
 In this section, we'll guide you through setting up and running RAG for your document-based QnA. Follow these steps to get started:
@@ -34,7 +35,7 @@ cd rag_api
 ```bash
 pip install -r requirements.txt
 ```
-![Architecture](docs/img/chat3.png)
+
 
 3. Create a free Nvidia account [NVIDIA NIM](https://build.nvidia.com/explore/discover) and get an api key copy the key into a created .env file
 
@@ -61,10 +62,10 @@ We also use the [Gradio](https://www.gradio.app/) interface to provide a simple 
 In another terminal start the front end
 
 ``` 
-cd rag_api
+cd RAG-chatbot-nvidia
 python gradio_app.py
 ```
-Follow the link provided to start the gradio app and enter the same collection name as the backend and start your conversation.
+Follow the link provided to start the gradio app and enter the same collection name as the backend and start your conversation about the document.
 
 
 An SQLite database is automatically created to store chat history and session data, ensuring conversations persist even if the server is restarted. This allows users to resume previous sessions seamlessly.
