@@ -1,0 +1,42 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Environment files (secrets, API keys)
+.env
+
+# Data and database files
+data/
+*.db
+*.sqlite3
+
+# Local configuration and logs
+*.log
+*.yaml~
+*.json~
+*.pkl
+
+# VSCode / editor folders
+.vscode/
+.idea/
+
+# Build / test / cache artifacts
+*.egg-info/
+*.egg/
+.eggs/
+.tox/
+.mypy_cache/
+.pytest_cache/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Project-specific
+src/rag_app/COLLECTIONS.txt
