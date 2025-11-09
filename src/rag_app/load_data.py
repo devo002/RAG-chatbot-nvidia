@@ -1,4 +1,5 @@
 from langchain.document_loaders import PyPDFLoader
+#from langchain_community.document_loaders import PyPDFLoader
 from langchain.document_loaders.html import UnstructuredHTMLLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
